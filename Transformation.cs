@@ -2,8 +2,6 @@ using System.Collections.Generic;
 
 namespace Linq2
 {
-    // Uncomment the TransformationFunction delegate declaration
-    //
     // following the examples in the lessons, declare the type
     // TransformationFunction as a delegate that takes a single
     // int parameter and returns an int result.
@@ -16,7 +14,7 @@ namespace Linq2
     // extra parameter of type TransformationFunction, and
     // return an IEnumerable<int>.
 
-    public static class naser
+    public static class Transformation
     {
         public static IEnumerable<int> Transform(this IEnumerable<int> Li, TransformationFunction number)
         {
