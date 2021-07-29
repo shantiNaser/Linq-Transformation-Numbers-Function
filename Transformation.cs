@@ -16,11 +16,11 @@ namespace Linq2
 
     public static class Transformation
     {
-        public static IEnumerable<int> Transform(this IEnumerable<int> Li, TransformationFunction number)
+        public static IEnumerable<int> Transform(this IEnumerable<int> items, TransformationFunction transformer)
         {
-            foreach (var item in Li)
+            foreach (var item in items)
             {
-                yield return number(item);
+                yield return transformer(item);
             }
 
         }
